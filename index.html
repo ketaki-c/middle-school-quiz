@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA PACE Quiz (middle school students)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background GIF -->
+    <div id="background-gif"></div>
+
+    <!-- Start Screen -->
+    <div id="start-screen" class="center-container">
+        <h1>Welcome to the NASA PACE Quiz for Middle School Students</h1>
+        <p>Test your knowledge about NASA's PACE mission!</p>
+        <button id="start-button" class="btn">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Container -->
+    <div id="quiz-container" class="center-container" style="display: none;">
+        <div id="legend">
+            <p>Total Questions: 10</p>
+            <p>Questions Attempted: <span id="questions-attempted">0</span></p>
+            <p>Correct Answers: <span id="correct-answers">0</span></p>
+            <p>Wrong Answers: <span id="wrong-answers">0</span></p>
+            <p>Unattempted: <span id="unattempted">10</span></p>
+        </div>
+        <div id="question-container">
+            <div id="question" class="question-text"></div>
+            <div id="answer-buttons" class="btn-container"></div>
+            <div id="message-box" class="message-box"></div>
+            <a id="info-link" href="#" target="_blank" style="display: none;">More info</a>
+            <button id="next-button" class="btn" style="display: none;">Next</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
